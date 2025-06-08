@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "league-mod-brand",
+	"version": "${version}",
+	"name": "League Mod Brand",
+	"description": "Mod of league legends champion Brand. Made for Profi.ru commision ",
+	"authors": [
+		"Woolfygor"
+	],
+	"contact": {
+		"homepage": "https://github.com/WoolfyGor",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/league-mod-brand/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"leaguemod.brand.LeagueModBrand"
+		],
+		"fabric-datagen": [
+			"leaguemod.brand.LeagueModBrandDataGenerator"
+		],
+		"client": [
+			"leaguemod.brand.LeagueModBrandClient"
+		]
+	},
+	"depends": {
+		"fabricloader": ">=0.14.21",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
